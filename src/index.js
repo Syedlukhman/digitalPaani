@@ -153,5 +153,5 @@ app.delete('/deleteBooksByAuthor/:authorId', decodeJwt, (req, res) => {
 });
 
 app.listen(9000, () => {
-    console.log("Server has started")
+    console.log("http://localhost:9000/")
 });
