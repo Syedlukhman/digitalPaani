@@ -102,7 +102,7 @@ app.post('/addUser', decodeJwt, addUserValidation, (req, res) => {
     users.push(user);
     res.status(200).send(users);
 });
-
+console.log("hello")
 app.put('/updateBook/:id', decodeJwt, updateBookValidation, (req, res) => {
     const bookId = req.params.id;
     const { userId, isSuperUser } = req.user;
