@@ -22,6 +22,9 @@ var books = [
         year: 2022
     }
 ];
+for (let i = 0; i <= 4; i++) {
+    console.log(i);
+}
 
 const users = [
     { name: 'Syed Lukman', id: '1001', type: 'reader', isSuperUser: true },
@@ -41,6 +44,7 @@ app.get('/getToken', (req, res) => {
 app.get('/books', decodeJwt, (req, res) => {
     const { author, year, id, title } = req.query;
     let filteredBooks = books;
+    console.log(author);
     if (author) {
         filteredBooks = filteredBooks.filter(b => b.author === author);
     }
