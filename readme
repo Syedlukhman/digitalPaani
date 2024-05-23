@@ -24,6 +24,7 @@ This Node.js application provides a simple CRUD (Create, Read, Update, Delete) i
 
 2. Install Dependencies:
    cd <your-repo-name>
+   npm install
 
 3.Running the Application
 Start the Server:
